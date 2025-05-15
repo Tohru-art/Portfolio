@@ -117,7 +117,7 @@ export default function Home() {
                 </li>
                 <li className="flex justify-between items-center">
                   <span className="font-medium">Python</span>
-                  <span className="bg-trans-900 text-gray-300 text-xs px-2 py-0.5 rounded-full">Advanced</span>
+                  <span className="bg-trans-900 text-gray-300 text-xs px-2 py-0.5 rounded-full">Beginner</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <span className="font-medium">JavaScript</span>
