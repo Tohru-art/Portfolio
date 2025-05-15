@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from '@vercel/analytics/next'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
