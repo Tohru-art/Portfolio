@@ -49,7 +49,7 @@ export default function Home() {
             <ol className="relative border-s border-gray-700 ml-4">
               <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                <time className="text-sm text-gray-400">2022 – Present</time>
+                <time className="text-sm text-gray-400">2024 – Present</time>
                 <h4 className="text-lg font-semibold text-white">Brooklyn College</h4>
                 <p className="text-gray-300 text-sm">B.S. Computer Science</p>
               </li>
@@ -113,7 +113,7 @@ export default function Home() {
               <ul className="space-y-3 text-sm text-gray-300">
                 <li className="flex justify-between items-center">
                   <span className="font-medium">Java</span>
-                  <span className="bg-transparent-900 text-gray-300 text-xs px-2 py-0.5 rounded-full">Advanced</span>
+                  <span className="bg-transparent-900 text-gray-300 text-xs px-2 py-0.5 rounded-full">Basic</span>
                 </li>
                 <li className="flex justify-between items-center">
                   <span className="font-medium">Python</span>
