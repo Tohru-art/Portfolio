@@ -72,7 +72,7 @@ export default function Home() {
                   <h4 className="text-white font-semibold">Security+</h4>
                   <p className="text-sm text-gray-400">Comptia exam covering core blue team skills</p>
                 </div>
-                <span className="bg-blue-900 text-xs text-blue-300 px-2 py-0.5 rounded-full">In Progress</span>
+                <span className="bg-blue-900 text-xs text-blue-300 px-2 py-0.5 rounded-full whitespace-nowrap">In Progress</span>
               </li>
 
               <li className="flex items-start justify-between gap-4 bg-gray-800 p-3 rounded-lg">
@@ -80,7 +80,7 @@ export default function Home() {
                   <h4 className="text-white font-semibold">Google Cybersecurity Certificate</h4>
                   <p className="text-sm text-gray-400">Covers analyst skills, security tools, ethics, and attack impact</p>
                 </div>
-                <span className="bg-green-900 text-xs text-green-300 px-2 py-0.5 rounded-full">Completed</span>
+                <span className="bg-green-900 text-xs text-green-300 px-2 py-0.5 rounded-full whitespace-nowrap">Completed</span>
               </li>
         
               <li className="flex items-start justify-between gap-4 bg-gray-800 p-3 rounded-lg">
@@ -88,14 +88,14 @@ export default function Home() {
                   <h4 className="text-white font-semibold">TryHackMe</h4>
                   <p className="text-sm text-gray-400">Hands-on virtual lab with blue team pathway</p>
                 </div>
-                <span className="bg-blue-900 text-xs text-blue-300 px-2 py-0.5 rounded-full">Blue Team</span>
+                <span className="bg-blue-900 text-xs text-blue-300 px-2 py-0.5 rounded-full whitespace-nowrap">Blue Team</span>
               </li>
               <li className="flex items-start justify-between gap-4 bg-gray-800 p-3 rounded-lg">
                 <div>
                   <h4 className="text-white font-semibold">Google IT Support</h4>
                   <p className="text-sm text-gray-400">Coursera-backed cert for troubleshooting & support</p>
                 </div>
-                <span className="bg-green-900 text-xs text-green-300 px-2 py-0.5 rounded-full">Completed</span>
+                <span className="bg-green-900 text-xs text-green-300 px-2 py-0.5 rounded-full whitespace-nowrap">Completed</span>
               </li>
             </ul>
           </div>
