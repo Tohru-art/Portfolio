@@ -5,12 +5,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#111111] text-white font-sans">
       <header className="container mx-auto py-16 flex flex-col items-center text-center">
-        <div className="flex justify-center">
+        <div className="w-32 h-32 relative">
           <Image
             src="/avatar.png"
             alt="Will-Garlens Avatar"
-            width={128}
-            height={128}
+            layout="fill"
             className="rounded-full object-cover"
           />
         </div>
