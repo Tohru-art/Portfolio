@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#111111] text-white font-sans">
       <header className="container mx-auto py-16 flex flex-col items-center text-center">
-        <div className="w-32 h-32 relative">
+        <div className="w-32 h-32 relative rounded-full overflow-hidden">
           <Image
             src="/avatar.png"
             alt="Will-Garlens Avatar"
             layout="fill"
-            className="rounded-full object-cover"
+            className="object-cover"
           />
         </div>
         <h1 className="text-4xl font-bold mt-6">Hi, I’m Will-Garlens</h1>
@@ -47,12 +47,12 @@ export default function Home() {
               <Briefcase size={20} /> Education
             </h3>
             <ol className="relative border-s border-gray-700 ml-4">
-              <li className="mb-10 ms-4">
+              {/* <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                 <time className="text-sm text-gray-400">2024 – 2</time>
                 <h4 className="text-lg font-semibold text-white">Brooklyn College</h4>
                 <p className="text-gray-300 text-sm">B.S. Computer Science</p>
-              </li>
+              </li> */}
               <li className="ms-4">
                 <div className="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                 <time className="text-sm text-gray-400">In Progress</time>
