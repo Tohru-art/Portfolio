@@ -47,12 +47,12 @@ export default function Home() {
               <Briefcase size={20} /> Education
             </h3>
             <ol className="relative border-s border-gray-700 ml-4">
-              {/* <li className="mb-10 ms-4">
+              <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                 <time className="text-sm text-gray-400">2024 – 2</time>
                 <h4 className="text-lg font-semibold text-white">Brooklyn College</h4>
                 <p className="text-gray-300 text-sm">B.S. Computer Science</p>
-              </li> */}
+              </li>
               <li className="ms-4">
                 <div className="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -start-1.5 border border-white"></div>
                 <time className="text-sm text-gray-400">In Progress</time>
