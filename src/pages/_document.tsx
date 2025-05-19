@@ -18,7 +18,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon-v2.png" />
       </Head>
       <body>
         <Main />

@@ -7,7 +7,7 @@ export default function Home() {
       <header className="container mx-auto py-16 flex flex-col items-center text-center">
         <div className="w-32 h-32 relative">
           <Image
-            src="/avatar.png"
+            src="/avatar-v2.png"
             alt="Will-Garlens Avatar"
             layout="fill"
             className="rounded-full object-cover"
