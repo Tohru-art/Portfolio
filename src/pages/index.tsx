@@ -172,7 +172,7 @@ const projectsData = [
       "Developed PowerShell scripts for automated remediation of insecure protocols, weak ciphers, and privilege escalation vulnerabilities",
       "Established policy buy-in and coordinated with Change Advisory Board for deployment",
     ],
-    github: "https://github.com/Tohru-art",
+    github: "https://github.com/Tohru-art/Vulnerability-Management-Progran",
   },
   {
     title: "Ecological Travel Website",
@@ -181,7 +181,7 @@ const projectsData = [
       "Collaborated on a team to build a responsive website promoting sustainable and eco-friendly travel practices",
       "Managed project source control and deployment workflows through GitHub for seamless teamwork",
     ],
-    github: "https://github.com/Tohru-art",
+    github: "https://tohru-art.github.io/EcoTravel/",
   },
   {
     title: "Personal Portfolio Website",
@@ -190,7 +190,7 @@ const projectsData = [
       "Designed and launched a personal portfolio to showcase cybersecurity projects, certifications, and hands-on labs",
       "Integrated detailed breakdowns of technical skills and completed labs to highlight readiness for cybersecurity roles",
     ],
-    github: "https://github.com/Tohru-art",
+    github: "https://github.com/Tohru-art/Portfolio",
   },
 ];
 
