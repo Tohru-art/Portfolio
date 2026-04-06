@@ -36,14 +36,6 @@ function LinkedInIcon({ size = 22 }: { size?: number }) {
   );
 }
 
-function TwitchIcon({ size = 22 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z" />
-    </svg>
-  );
-}
-
 // ─── FadeIn component ─────────────────────────────────────────────────────────
 
 function FadeIn({
@@ -142,11 +134,10 @@ const experienceData = [
     duration: "Mar 2025 – Present",
     location: "Remote",
     bullets: [
-      "Participate in threat analysis and incident response within a live Security Operations Center (SOC)",
-      "Utilize Microsoft Sentinel (SIEM) to detect and monitor security threats, contributing to security posture improvements",
-      "Implement endpoint security strategies using Microsoft Defender for Endpoint (EDR)",
-      "Conduct vulnerability management with Tenable to identify and mitigate risks",
-      "Manage virtual machines on Microsoft Azure to support secure operations",
+      "Conducted vulnerability scans, detailed reports, and PowerShell-based remediations — contributing to a 100% reduction in critical, 90% in high, and 76% in medium vulnerabilities for the server team",
+      "Performed vulnerability assessments and risk prioritization using Tenable across Windows and Linux environments",
+      "Executed secure configurations and compliance audits (DISA STIG) with Tenable to meet industry standards",
+      "Automated remediation processes and STIG implementations via PowerShell to address critical vulnerabilities at scale",
     ],
   },
   {
@@ -175,13 +166,14 @@ const projectsData = [
     github: "https://github.com/Tohru-art/Vulnerability-Management-Progran",
   },
   {
-    title: "Ecological Travel Website",
-    tech: ["JavaScript", "HTML", "CSS"],
+    title: "KQL Detection Library",
+    tech: ["KQL", "Microsoft Sentinel", "Microsoft Defender for Endpoint", "MITRE ATT&CK"],
     bullets: [
-      "Collaborated on a team to build a responsive website promoting sustainable and eco-friendly travel practices",
-      "Managed project source control and deployment workflows through GitHub for seamless teamwork",
+      "Built a library of production-ready KQL detection rules for Microsoft Sentinel and MDE, each mapped to MITRE ATT&CK techniques",
+      "Included inline query logic, severity recommendations, and environment-specific tuning notes for each rule",
+      "Designed for SOC teams implementing threat detection across Microsoft cloud security ecosystems",
     ],
-    github: "https://tohru-art.github.io/EcoTravel/",
+    github: "https://github.com/Tohru-art/kql-detection-library",
   },
   {
     title: "Personal Portfolio Website",
@@ -201,7 +193,7 @@ const skillsData = [
   },
   {
     category: "Security Tools",
-    items: ["Microsoft Sentinel (SIEM)", "Defender for Endpoint (EDR)", "Tenable / Nessus", "Microsoft Azure", "Git"],
+    items: ["Microsoft Sentinel (SIEM)", "Defender for Endpoint (EDR)", "Tenable / Nessus", "KQL (Kusto Query Language)", "Microsoft Azure", "Git"],
   },
   {
     category: "Cybersecurity",
@@ -221,6 +213,12 @@ const certsData = [
     color: "blue" as const,
   },
   {
+    name: "CompTIA A+",
+    issuer: "CompTIA foundational IT and hardware certification",
+    status: "In Progress",
+    color: "blue" as const,
+  },
+  {
     name: "Google Cybersecurity Certificate",
     issuer: "Covers analyst skills, security tools, ethics, and attack impact",
     status: "Completed",
@@ -236,11 +234,12 @@ const certsData = [
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
 ];
+
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
@@ -334,7 +333,7 @@ export default function Home() {
                 </a>
               ))}
               <a
-                href="/resume.pdf"
+                href="/Will-Garlens Pierre Resume.pdf"
                 download
                 className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1"
               >
@@ -373,7 +372,7 @@ export default function Home() {
                 </a>
               ))}
               <a
-                href="/resume.pdf"
+                href="/Will-Garlens Pierre Resume.pdf"
                 download
                 className="block py-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
@@ -443,15 +442,7 @@ export default function Home() {
               >
                 <LinkedInIcon size={22} />
               </a>
-              <a
-                href="https://twitch.tv/exciteddarkowl"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Twitch channel"
-                className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-              >
-                <TwitchIcon size={22} />
-              </a>
+
               <a
                 href="mailto:willgarlensp@gmail.com"
                 aria-label="Email Will-Garlens"
@@ -462,9 +453,9 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={500} className="mt-6">
+          <FadeIn delay={560} className="mt-6">
             <a
-              href="/resume.pdf"
+              href="/Will-Garlens Pierre Resume.pdf"
               download
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors shadow-sm"
             >
@@ -479,53 +470,26 @@ export default function Home() {
             <FadeIn>
               <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">About Me</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I&apos;m a cybersecurity student at Western Governors University pursuing a B.S. in
-                Cybersecurity and Information Assurance, while gaining hands-on experience as a SOC
-                Analyst Intern at Log(N) Pacific. My work spans threat detection, incident response,
-                vulnerability management, and endpoint security using tools like Microsoft Sentinel,
-                Defender for Endpoint, and Tenable. I&apos;m actively working toward my CompTIA
-                Security+ certification and am passionate about protecting systems from evolving
-                threats. Fluent in English, French, and Haitian Creole.
+                Right now, I work as a SOC Analyst Intern at Log(N) Pacific, where I handle threat
+                detection, vulnerability management, and incident response on a daily basis. I have
+                used tools such as Microsoft Sentinel, Tenable Nessus, and PowerShell to reduce
+                vulnerabilities across Azure environments. That hands-on experience gave me a real
+                appreciation for how important it is not just to find problems but to communicate
+                them clearly to the people who can act on them. That is something I take seriously.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                Alongside my SOC work, I have been doing AI data annotation and model evaluation
+                through a Handshake AI fellowship. That role requires a lot of structured thinking,
+                attention to detail, and the ability to catch failure patterns that are easy to miss.
+                I believe those same skills translate well to the compliance tracking and security
+                operations work this internship involves.
               </p>
             </FadeIn>
           </div>
         </section>
 
-        {/* ── Experience ─────────────────────────────────────────────────── */}
-        <section id="experience" className="bg-gray-50 dark:bg-black py-14 scroll-mt-16 transition-colors duration-300">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <FadeIn>
-              <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2 text-gray-900 dark:text-white">
-                <Briefcase size={20} /> Experience
-              </h2>
-            </FadeIn>
-            <div className="grid md:grid-cols-2 gap-6">
-              {experienceData.map((exp, i) => (
-                <FadeIn key={i} delay={i * 120}>
-                  <div className="h-full bg-white dark:bg-neutral-900/80 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 shadow-sm hover:-translate-y-1 transition-all duration-200">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{exp.title}</h3>
-                    <p className="text-blue-600 dark:text-blue-400 font-medium mt-0.5 text-sm">{exp.company}</p>
-                    <div className="flex flex-wrap gap-x-4 gap-y-1 text-gray-400 dark:text-gray-500 text-xs mt-2">
-                      <span className="flex items-center gap-1"><Clock size={12} /> {exp.duration}</span>
-                      <span className="flex items-center gap-1"><MapPin size={12} /> {exp.location}</span>
-                    </div>
-                    <ul className="mt-4 space-y-2">
-                      {exp.bullets.map((b, j) => (
-                        <li key={j} className="text-gray-600 dark:text-gray-300 text-sm flex gap-2">
-                          <span className="text-blue-600 dark:text-blue-500 mt-0.5 shrink-0">▸</span>
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* ── Projects ───────────────────────────────────────────────────── */}
-        <section id="projects" className="bg-white dark:bg-[#111111] py-14 scroll-mt-16 transition-colors duration-300">
+        <section id="projects" className="bg-gray-50 dark:bg-black py-14 scroll-mt-16 transition-colors duration-300">
           <div className="container mx-auto px-4 max-w-6xl">
             <FadeIn>
               <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2 text-gray-900 dark:text-white">
@@ -561,6 +525,39 @@ export default function Home() {
                       <GitHubIcon size={14} /> View on GitHub
                       <ExternalLink size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-150" />
                     </a>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Experience ─────────────────────────────────────────────────── */}
+        <section id="experience" className="bg-white dark:bg-[#111111] py-14 scroll-mt-16 transition-colors duration-300">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <FadeIn>
+              <h2 className="text-2xl font-semibold mb-8 flex items-center gap-2 text-gray-900 dark:text-white">
+                <Briefcase size={20} /> Experience
+              </h2>
+            </FadeIn>
+            <div className="grid md:grid-cols-2 gap-6">
+              {experienceData.map((exp, i) => (
+                <FadeIn key={i} delay={i * 120}>
+                  <div className="h-full bg-white dark:bg-neutral-900/80 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 shadow-sm hover:-translate-y-1 transition-all duration-200">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{exp.title}</h3>
+                    <p className="text-blue-600 dark:text-blue-400 font-medium mt-0.5 text-sm">{exp.company}</p>
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 text-gray-400 dark:text-gray-500 text-xs mt-2">
+                      <span className="flex items-center gap-1"><Clock size={12} /> {exp.duration}</span>
+                      <span className="flex items-center gap-1"><MapPin size={12} /> {exp.location}</span>
+                    </div>
+                    <ul className="mt-4 space-y-2">
+                      {exp.bullets.map((b, j) => (
+                        <li key={j} className="text-gray-600 dark:text-gray-300 text-sm flex gap-2">
+                          <span className="text-blue-600 dark:text-blue-500 mt-0.5 shrink-0">▸</span>
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </FadeIn>
               ))}
@@ -674,9 +671,7 @@ export default function Home() {
               <a href="https://linkedin.com/in/will-garlens-pierre" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">
                 <LinkedInIcon size={18} />
               </a>
-              <a href="https://twitch.tv/exciteddarkowl" target="_blank" rel="noreferrer" aria-label="Twitch" className="text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">
-                <TwitchIcon size={18} />
-              </a>
+
             </div>
           </div>
         </footer>
